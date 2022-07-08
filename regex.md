@@ -1,6 +1,6 @@
 # Regex Tutorial
 
-This is an in depth explanatation of the use of Regular Expressions or RegEx.
+This is an in depth explanation of the use of Regular Expressions or RegEx.
 I will be using the following regex for the purposes of explaining each components function. 
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
@@ -133,13 +133,13 @@ The following regular expression is for matching an email address.
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
 
-It is important to note that the forward slashes (`/`) at the beginning and end of of the regex simply denote the boundaries or beginning and end of itself.
+It is important to note that the forward slashes (`/`) at the beginning and end of the regex simply denote the boundaries or beginning and end of itself.
 
 ```
 /^([a-z0-9_\.-]+)@
 ```
 
-For the first grouping above, characterized by being wrapped in parentheses `()`, the `^` denotes the beginning of the string to be matched. Parentheses used in a regular expression not only group elements of that expression together, but also designate any matches found for that group as *tokens*. We can see there is a bracket expression with a set of ranges and literal characters to be matched. `([a-z` (matches lowercase letters from a-z) `0-9` (matches digits from 0-9) `_` (matches the literal character underscore) `\.` (an escaped character, matching the literal character period or dot) `-` (matches the literal character dash) `]+)`. The quantifier `+` will match one or more of the preceding *token*. Finally, the `@` outside the parentheses but will be matched only once in this expression as a literal character.
+For the first grouping above, characterized by being wrapped in parentheses `()`, the `^` denotes the beginning of the string to be matched. Parentheses used in a regular expression not only group elements of that expression together, but also designate any matches found for that group as *tokens*. We can see there is a bracket expression with a set of ranges and literal characters to be matched. `([a-z` (matches lowercase letters from a-z) `0-9` (matches digits from 0-9) `_` (matches the literal character underscore) `\.` (an escaped character, matching the literal character period or dot) `-` (matches the literal character dash) `]+)`. The quantifier `+` will match one or more of the preceding *token*. Finally, the `@` outside the parentheses will be matched only once in this expression as a literal character.
 
 ```
 ([\da-z\.-]+)\.
